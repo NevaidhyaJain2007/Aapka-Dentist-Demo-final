@@ -1,0 +1,62 @@
+{
+  "patients": [
+    {
+      "id": "8748281d-a9ef-40b5-a741-a721393f4e05",
+      "name": "nevaidhya Jain",
+      "email": "nevaidhyajain@gmail.com",
+      "phone": "09522303303",
+      "createdAt": "2026-10-28T08:49:37.305Z"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "63a686a3-955c-4bce-a047-1bceccd3cf1d",
+      "reference": "AD-DA5B89",
+      "patientId": "8748281d-a9ef-40b5-a741-a721393f4e05",
+      "serviceId": "S1",
+      "service": "General Dental Consultation",
+      "date": "2026-10-28",
+      "startTime": "14:30",
+      "endTime": "15:00",
+      "status": "cancelled",
+      "source": "AI chatbot",
+      "createdAt": "2026-10-28T08:49:37.305Z",
+      "updatedAt": "2026-10-28T08:51:38.924Z"
+    }
+  ],
+  "emails": [
+    {
+      "id": "7bf0340f-028d-4595-bf7c-984a18bb5101",
+      "appointmentId": "63a686a3-955c-4bce-a047-1bceccd3cf1d",
+      "type": "cancellation",
+      "recipient": "nevaidhyajain@gmail.com",
+      "status": "simulated",
+      "createdAt": "2026-10-28T08:51:38.924Z"
+    },
+    {
+      "id": "26573dc4-bf7c-483c-a39b-4bfd888d1507",
+      "appointmentId": "63a686a3-955c-4bce-a047-1bceccd3cf1d",
+      "type": "booking",
+      "recipient": "nevaidhyajain@gmail.com",
+      "status": "simulated",
+      "createdAt": "2026-10-28T08:49:37.306Z"
+    }
+  ],
+  "activity": [
+    {
+      "id": "bd1a8d9c-4b0f-41c9-81ee-de21f9301f71",
+      "type": "appointment_cancelled",
+      "description": "Receptionist cancelled appointment AD-DA5B89.",
+      "related": "63a686a3-955c-4bce-a047-1bceccd3cf1d",
+      "createdAt": "2026-10-28T08:51:38.925Z"
+    },
+    {
+      "id": "2c0b35ff-90da-4e40-bd61-ea25a0a968ce",
+      "type": "appointment_created",
+      "description": "Appointment AD-DA5B89 booked (demo email simulated).",
+      "related": "63a686a3-955c-4bce-a047-1bceccd3cf1d",
+      "createdAt": "2026-10-28T08:49:37.306Z"
+    }
+  ],
+  "conversations": []
+}

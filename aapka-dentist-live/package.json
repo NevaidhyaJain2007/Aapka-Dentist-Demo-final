@@ -1,0 +1,11 @@
+{
+  "name": "aapka-dentist",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs",
+    "create:receptionist": "node scripts/create-receptionist.mjs"
+  }
+}

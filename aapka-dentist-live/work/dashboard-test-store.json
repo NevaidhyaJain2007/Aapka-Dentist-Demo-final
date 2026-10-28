@@ -1,0 +1,134 @@
+{
+  "patients": [
+    {
+      "id": "1a2a1ab1-4e4f-45ff-9a9a-044ef47d8acd",
+      "name": "Website Test Patient",
+      "email": "website@example.invalid",
+      "phone": "0000000001",
+      "createdAt": "2026-10-28T08:29:41.617Z"
+    },
+    {
+      "id": "f581ca2a-7826-4a8b-9ee8-d9a0af60be43",
+      "name": "Call-in Test Patient",
+      "email": "",
+      "phone": "0000000003",
+      "createdAt": "2026-10-28T08:29:41.651Z"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "3f446b63-cfe8-44fd-800e-7971f040af04",
+      "reference": "AD-B60B5C",
+      "patientId": "1a2a1ab1-4e4f-45ff-9a9a-044ef47d8acd",
+      "serviceId": "S1",
+      "service": "General Dental Consultation",
+      "date": "2026-10-27",
+      "startTime": "09:30",
+      "endTime": "10:00",
+      "status": "completed",
+      "source": "AI chatbot",
+      "createdAt": "2026-10-28T08:29:41.617Z",
+      "updatedAt": "2026-10-28T08:30:46.784Z"
+    },
+    {
+      "id": "a41be57e-d435-4dc5-b01e-62162900d821",
+      "reference": "AD-454C17",
+      "patientId": "f581ca2a-7826-4a8b-9ee8-d9a0af60be43",
+      "serviceId": "S1",
+      "service": "General Dental Consultation",
+      "date": "2026-10-29",
+      "startTime": "10:00",
+      "endTime": "10:30",
+      "status": "cancelled",
+      "source": "Receptionist",
+      "notes": "Fictional test only",
+      "createdAt": "2026-10-28T08:29:41.651Z",
+      "updatedAt": "2026-10-28T08:29:41.657Z"
+    },
+    {
+      "id": "PENDING-TEST-ID",
+      "reference": "AD-PENDING1",
+      "patientId": "1a2a1ab1-4e4f-45ff-9a9a-044ef47d8acd",
+      "serviceId": "S1",
+      "service": "General Dental Consultation",
+      "date": "2026-10-29",
+      "startTime": "17:30",
+      "endTime": "18:00",
+      "status": "confirmed",
+      "source": "Website test",
+      "createdAt": "2026-10-28T08:37:53.8616453Z",
+      "updatedAt": "2026-10-28T08:38:14.837Z"
+    }
+  ],
+  "emails": [
+    {
+      "id": "6a82a017-a384-45d3-b820-8138db4ebeb1",
+      "appointmentId": "PENDING-TEST-ID",
+      "type": "confirmation",
+      "recipient": "website@example.invalid",
+      "status": "simulated",
+      "createdAt": "2026-10-28T08:38:14.837Z"
+    },
+    {
+      "id": "ca6a3c78-c234-425a-8e73-1eb9cf2fa837",
+      "appointmentId": "3f446b63-cfe8-44fd-800e-7971f040af04",
+      "type": "reschedule",
+      "recipient": "website@example.invalid",
+      "status": "simulated",
+      "createdAt": "2026-10-28T08:29:41.643Z"
+    },
+    {
+      "id": "7a26bae5-0a05-455a-a3d3-0bd92f2d6832",
+      "appointmentId": "3f446b63-cfe8-44fd-800e-7971f040af04",
+      "type": "booking",
+      "recipient": "website@example.invalid",
+      "status": "simulated",
+      "createdAt": "2026-10-28T08:29:41.617Z"
+    }
+  ],
+  "activity": [
+    {
+      "id": "b6e274d2-daae-4996-ab2b-63a54bd2bd2f",
+      "type": "appointment_confirmed",
+      "description": "Receptionist confirmed appointment AD-PENDING1.",
+      "related": "PENDING-TEST-ID",
+      "createdAt": "2026-10-28T08:38:14.838Z"
+    },
+    {
+      "id": "eadac39e-6d5a-4e92-92dd-b62c696e2f3f",
+      "type": "appointment_completed",
+      "description": "Receptionist marked appointment AD-B60B5C completed.",
+      "related": "3f446b63-cfe8-44fd-800e-7971f040af04",
+      "createdAt": "2026-10-28T08:30:46.785Z"
+    },
+    {
+      "id": "8e97823d-7db5-4ab8-93e5-f9ecc7ea693e",
+      "type": "appointment_cancelled",
+      "description": "Receptionist cancelled appointment AD-454C17.",
+      "related": "a41be57e-d435-4dc5-b01e-62162900d821",
+      "createdAt": "2026-10-28T08:29:41.657Z"
+    },
+    {
+      "id": "5afda47b-2f33-4ec2-8507-c24f58d23fdb",
+      "type": "appointment_created",
+      "description": "Receptionist created appointment AD-454C17.",
+      "related": "a41be57e-d435-4dc5-b01e-62162900d821",
+      "createdAt": "2026-10-28T08:29:41.651Z"
+    },
+    {
+      "id": "b2af95f9-546f-4066-a74c-ae993fa335fe",
+      "type": "appointment_rescheduled",
+      "description": "Receptionist rescheduled appointment AD-B60B5C.",
+      "related": "3f446b63-cfe8-44fd-800e-7971f040af04",
+      "createdAt": "2026-10-28T08:29:41.643Z"
+    },
+    {
+      "id": "9798757c-9cba-425b-ab2f-480940253aa2",
+      "type": "appointment_created",
+      "description": "Appointment AD-B60B5C booked (demo email simulated).",
+      "related": "3f446b63-cfe8-44fd-800e-7971f040af04",
+      "createdAt": "2026-10-28T08:29:41.617Z"
+    }
+  ],
+  "conversations": []
+}
